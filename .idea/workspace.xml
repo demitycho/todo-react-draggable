@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="de15e7f2-e29a-4b5f-8077-af772bee48e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/constants/action-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/constants/action-types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/middleware/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/middleware/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +64,7 @@
       <updated>1582192608058</updated>
       <workItem from="1582192614369" duration="4546000" />
       <workItem from="1582267849792" duration="737000" />
-      <workItem from="1582299212578" duration="8407000" />
+      <workItem from="1582299212578" duration="8637000" />
     </task>
     <servers />
   </component>

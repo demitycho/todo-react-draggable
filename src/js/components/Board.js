@@ -27,9 +27,9 @@ class ConnectedBoard extends Component {
     return (
       <div style={{width: "100%", display:"flex", justifyContent: "space-between"}}>
         <DragDropContext onDragEnd={this.props.moveObject}>
-          <TodoList name="droppable" list={this.props.todo}/>
-          <TodoList name="droppable2" list={this.props.inProgress}/>
-          <TodoList name="droppable3" list={this.props.done}/>
+          <TodoList name="Todo" id="todo" list={this.props.todo}/>
+          <TodoList name="In Progress" id="inProgress" list={this.props.inProgress}/>
+          <TodoList name="Done" id="done" list={this.props.done}/>
         </DragDropContext>
       </div>
     );

@@ -25,7 +25,7 @@ const getListStyle = isDraggingOver => ({
 const TodoList = props =>
   <div>
     <h2>{props.name} {props.list.length}</h2>
-    <Droppable droppableId={props.name}>
+    <Droppable droppableId={props.id}>
       {(provided, snapshot) => (
         <div
           ref={provided.innerRef}

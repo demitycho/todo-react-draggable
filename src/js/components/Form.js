@@ -1,11 +1,11 @@
 // src/js/components/Form.jsx
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addArticle } from "../actions/index";
+import { addTodo } from "../actions/index";
 
 function mapDispatchToProps(dispatch) {
     return {
-        addArticle: article => dispatch(addArticle(article))
+        addTodo: todo => dispatch(addTodo(todo))
     };
 }
 
@@ -13,7 +13,7 @@ class ConnectedForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: ""
+            newTodo: ""
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -25,20 +25,20 @@ class ConnectedForm extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        const { title } = this.state;
-        this.props.addArticle({ title });
-        this.setState({ title: "" });
+        const { newTodo } = this.state;
+        this.props.addTodo({ title: newTodo });
+        this.setState({ newTodo: "" });
     }
     render() {
-        const { title } = this.state;
+        const { newTodo } = this.state;
         return (
             <form onSubmit={this.handleSubmit}>
                 <div>
-                    <label htmlFor="title">Title</label>
+                    <label htmlFor="todo">Title</label>
                     <input
                         type="text"
-                        id="title"
-                        value={title}
+                        id="newTodo"
+                        value={newTodo}
                         onChange={this.handleChange}
                     />
                 </div>

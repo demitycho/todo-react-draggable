@@ -1,5 +1,6 @@
-import { ADD_ARTICLE, MOVE_OBJECT } from "../constants/action-types";
+import { ADD_TODO, MOVE_OBJECT } from "../constants/action-types";
 // fake data generator
+let total = 20;
 const getItems = (count, offset = 0) =>
   Array.from({ length: count }, (v, k) => k).map(k => ({
     id: `item-${k + offset}`,
@@ -44,9 +45,13 @@ const initialState = {
 };
 
 function rootReducer(state = initialState, action) {
-  if (action.type === ADD_ARTICLE) {
+  if (action.type === ADD_TODO) {
     return Object.assign({}, state, {
-      articles: state.articles.concat(action.payload)
+      todo: state.todo.concat(
+        {
+          id: `item-${total++}`,
+          content: action.payload.title
+        })
     });
   }
   if (action.type === MOVE_OBJECT) {

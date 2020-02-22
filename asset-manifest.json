@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/todo-react-draggable/static/css/main.bad632ae.chunk.css",
+    "main.js": "/todo-react-draggable/static/js/main.10d0e023.chunk.js",
+    "main.js.map": "/todo-react-draggable/static/js/main.10d0e023.chunk.js.map",
+    "runtime-main.js": "/todo-react-draggable/static/js/runtime-main.bbd5dbb3.js",
+    "runtime-main.js.map": "/todo-react-draggable/static/js/runtime-main.bbd5dbb3.js.map",
+    "static/js/2.c826ed66.chunk.js": "/todo-react-draggable/static/js/2.c826ed66.chunk.js",
+    "static/js/2.c826ed66.chunk.js.map": "/todo-react-draggable/static/js/2.c826ed66.chunk.js.map",
+    "index.html": "/todo-react-draggable/index.html",
+    "precache-manifest.19f7f3dab93a325187dc1d51b3a4db78.js": "/todo-react-draggable/precache-manifest.19f7f3dab93a325187dc1d51b3a4db78.js",
+    "service-worker.js": "/todo-react-draggable/service-worker.js",
+    "static/css/main.bad632ae.chunk.css.map": "/todo-react-draggable/static/css/main.bad632ae.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bbd5dbb3.js",
+    "static/js/2.c826ed66.chunk.js",
+    "static/css/main.bad632ae.chunk.css",
+    "static/js/main.10d0e023.chunk.js"
+  ]
+}

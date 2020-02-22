@@ -20,19 +20,6 @@ const getItemStyle = (isDragging, draggableStyle) => ({
   ...draggableStyle
 });
 
-const countStyle = {
-  textAlign: "center",
-  width: "40%",
-  height: "70%",
-  fontSize: "20px",
-  background: "white",
-};
-
-const getListStyle = isDraggingOver => ({
-  background: isDraggingOver ? 'lightblue' : 'lightgrey',
-  // padding: grid/2,
-});
-
 const TodoList = props =>
   <div className="todoList">
     <div className="listHeader">
@@ -47,7 +34,10 @@ const TodoList = props =>
       {(provided, snapshot) => (
         <div
           ref={provided.innerRef}
-          style={getListStyle(snapshot.isDraggingOver)}>
+          style={{
+            background: snapshot.isDraggingOver ?
+              'lightblue' : 'lightgrey'}}
+        >
           {props.list.map((item, index) => (
             <Draggable
               key={item.id}

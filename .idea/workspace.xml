@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de15e7f2-e29a-4b5f-8077-af772bee48e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/js/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/components/TodoCount.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/Board.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Board.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/components/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/TodoList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +40,7 @@
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="C:/zendesk-test/node_modules/eslint" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -78,7 +72,7 @@
       <workItem from="1582192614369" duration="4546000" />
       <workItem from="1582267849792" duration="737000" />
       <workItem from="1582299212578" duration="9788000" />
-      <workItem from="1582344557314" duration="4891000" />
+      <workItem from="1582344557314" duration="5054000" />
     </task>
     <servers />
   </component>
@@ -86,6 +80,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="617" y="215" key="#ESLint" timestamp="1582356360515">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="215" key="#ESLint/0.0.2048.1112@0.0.2048.1112" timestamp="1582356360515" />
     <state x="755" y="304" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582344953794">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -94,10 +92,10 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="879" y="268" key="RollbackChangesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1582310454439" />
-    <state x="719" y="288" width="609" height="536" key="find.popup" timestamp="1582356181528">
+    <state x="719" y="288" width="609" height="536" key="find.popup" timestamp="1582356378075">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="719" y="288" width="609" height="536" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1582356181528" />
+    <state x="719" y="288" width="609" height="536" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1582356378075" />
     <state x="681" y="259" key="run.anything.popup" timestamp="1582355035715">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

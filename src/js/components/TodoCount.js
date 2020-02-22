@@ -6,6 +6,7 @@ const countStyle = {
   height: "50px",
   fontSize: "20px",
   background: "white",
+  padding: "3px",
 
   boxShadow: "inset 0 0 4px grey"
 };

@@ -2,24 +2,27 @@ import React from "react";
 import {Draggable, Droppable} from "react-beautiful-dnd";
 import TodoCount from "./TodoCount";
 
-const grid = 8;
-
-const getItemStyle = (isDragging, draggableStyle) => ({
-  // some basic styles to make the todo look a bit nicer
+const itemStyle = (isDragging, draggableStyle) => ({
+  // some basic styles to make the todo object look a bit nicer
+  fontSize: "20px",
   userSelect: 'none',
-  padding: grid * 2,
-  // margin: `0 0 ${grid}px 0`,
+  padding: 16,
   borderStyle: "solid",
   borderWidth: "1px",
   borderColor: "lightgrey",
 
-// change background colour if dragging
+  // change background colour if dragging
   background: isDragging ? 'lightgreen' : 'white',
 
-  // styles we need to apply on draggables
   ...draggableStyle
 });
 
+/**
+ * Following react dnd example
+ * props
+ *  list: The list of todo object
+ *  name: The display name of the column
+ */
 const TodoList = props =>
   <div className="todoList">
     <div className="listHeader">
@@ -48,7 +51,7 @@ const TodoList = props =>
                   ref={provided.innerRef}
                   {...provided.draggableProps}
                   {...provided.dragHandleProps}
-                  style={getItemStyle(
+                  style={itemStyle(
                     snapshot.isDragging,
                     provided.draggableProps.style
                   )}>

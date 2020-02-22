@@ -9,11 +9,8 @@ const mapStateToProps = state => {
   };
 };
 
+// Some old school React components
 class ConnectedHeader extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="appHeader">

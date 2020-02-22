@@ -1,5 +1,5 @@
 import { ADD_TODO, MOVE_OBJECT } from "../constants/action-types";
-// fake data generator
+/*** Helper functions ***/
 let total = 20;
 const getItems = (count, offset = 0) =>
   Array.from({ length: count }, (v, k) => k).map(k => ({
@@ -14,7 +14,7 @@ const reorder = (list, startIndex, endIndex) => {
   return result;
 };
 
-const move = (state, source, destination, droppableSource, droppableDestination) => {
+const moveTodo = (state, source, destination, droppableSource, droppableDestination) => {
   const sourceClone = Array.from(source);
   const destClone = Array.from(destination);
   const [removed] = sourceClone.splice(droppableSource.index, 1);
@@ -24,9 +24,10 @@ const move = (state, source, destination, droppableSource, droppableDestination)
   const result = state;
   result[droppableSource.droppableId] = sourceClone;
   result[droppableDestination.droppableId] = destClone;
-  console.log(result);
   return result;
 };
+
+/** End helper functions **/
 
 const initialState = {
   todo: getItems(10),
@@ -34,6 +35,10 @@ const initialState = {
   done: getItems(5, 15)
 };
 
+
+/**
+ * 2 mutating actions: Add and Move object
+ */
 function rootReducer(state = initialState, action) {
   if (action.type === ADD_TODO) {
     return Object.assign({}, state, {
@@ -51,7 +56,7 @@ function rootReducer(state = initialState, action) {
     if (!destination) {
       return;
     }
-
+    // Same list === reordering within the list
     if (source.droppableId === destination.droppableId) {
       const items = reorder(
         state[source.droppableId],
@@ -62,8 +67,9 @@ function rootReducer(state = initialState, action) {
         [source.droppableId]: items
       });
     }
+    // Different list: moving between lists
     else {
-      const result = move(
+      const result = moveTodo(
         state,
         state[source.droppableId],
         state[destination.droppableId],

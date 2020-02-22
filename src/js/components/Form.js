@@ -1,4 +1,3 @@
-// src/js/components/Form.jsx
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addTodo } from "../actions/index";
@@ -32,9 +31,8 @@ class ConnectedForm extends Component {
     render() {
         const { newTodo } = this.state;
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} style={{marginLeft: "20px"}}>
                 <div>
-                    <label htmlFor="todo">Title</label>
                     <input
                         type="text"
                         id="newTodo"

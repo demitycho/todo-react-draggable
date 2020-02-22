@@ -1,5 +1,6 @@
 import React from "react";
 import {Draggable, Droppable} from "react-beautiful-dnd";
+import TodoCount from "./TodoCount";
 
 const grid = 8;
 
@@ -40,7 +41,7 @@ const TodoList = props =>
         color: "white"}}>
         {props.name}
       </div>
-      <div style={countStyle}><b>{props.list.length}</b> <br/>PROJECTS</div>
+      <TodoCount count={props.list.length}/>
     </div>
     <Droppable droppableId={props.id}>
       {(provided, snapshot) => (

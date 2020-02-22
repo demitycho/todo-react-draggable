@@ -1,15 +1,15 @@
 import React from "react";
-import Form from "./Form";
+import Header from "./Header";
 import Board from "./Board";
 
 const App = () => (
-    <>
-        <div>
-            <h2>Add project</h2>
-            <Form />
-        </div>
-        <Board />
-    </>
+  <>
+    {/*Header*/}
+    <Header />
+
+    {/*Header*/}
+    <Board />
+  </>
 );
 
 export default App;

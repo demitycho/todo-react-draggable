@@ -1,4 +1,4 @@
-// src/js/components/Board.jsx
+// src/js/components/Header.jsx
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { moveObject } from "../actions/index";

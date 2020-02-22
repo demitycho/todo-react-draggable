@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+body {
+  background-color: lightgray;
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -20,6 +23,25 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.board {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.todoList {
+  width: 30%;
+}
+
+.listHeader {
+  background-color: dimgrey;
+  height: 70px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @keyframes App-logo-spin {

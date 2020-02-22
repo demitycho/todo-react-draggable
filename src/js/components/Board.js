@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { moveObject } from "../actions/index";
 import { DragDropContext } from 'react-beautiful-dnd';
 import TodoList from "./TodoList";
+import '../../App.css';
 
 function mapDispatchToProps(dispatch) {
   return {
@@ -25,7 +26,7 @@ class ConnectedBoard extends Component {
 
   render() {
     return (
-      <div style={{width: "100%", display:"flex", justifyContent: "space-between"}}>
+      <div className="board">
         <DragDropContext onDragEnd={this.props.moveObject}>
           <TodoList name="Todo" id="todo" list={this.props.todo}/>
           <TodoList name="In Progress" id="inProgress" list={this.props.inProgress}/>

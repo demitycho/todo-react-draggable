@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a6bcf9b5175b427b18ff481031db9f31",
+    "revision": "28035e7b564c474f87a622ab78139420",
     "url": "/todo-react-draggable/index.html"
   },
   {

@@ -2,7 +2,7 @@
 
 Live demo: https://demitycho.github.io/todo-react-draggable/
 
-##Requirements: 
+## Requirements: 
 `node version 10 or higher (tested on node 12)`
 
 The project is already hosted on gh-pages, but to run locally: 
